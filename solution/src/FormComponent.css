@@ -1,0 +1,147 @@
+/* Styling for the form container */
+.form-container {
+    max-width: 600px; /* Sets the maximum width of the form container */
+    margin: auto; /* Centers the form container horizontally on the page */
+    padding: 20px; /* Adds padding around the form container */
+    border: 1px solid #ccc; /* Creates a border around the form container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow for visual effect */
+}
+
+/* Styling for input groups */
+.input-group {
+    display: flex; /* Makes the input and label elements flex items */
+    align-items: center; /* Vertically aligns items within the input group */
+    margin-bottom: 50px; /* Adds space between input groups */
+    position: relative; /* Enables relative positioning for child elements */
+}
+
+/* Styling for input labels */
+.input-group label {
+    font-weight: bold; /* Makes labels bold */
+    margin-right: 10px; /* Adds spacing between label and input */
+    align-self: flex-start; /* Aligns labels to the start (left) of the input group */
+}
+
+/* Styling for input fields and selects */
+.input-group input[type="text"],
+.input-group select {
+    flex-grow: 1; /* Allows input fields to grow and fill available space */
+    padding: 5px; /* Adds padding inside input fields */
+    border: 1px solid #ccc; /* Creates a border around input fields */
+    border-radius: 4px; /* Rounds the corners of input fields */
+    width: 522px; /* Sets a fixed width for input fields */
+}
+
+/* Styling for error messages */
+.error-message {
+    color: red; /* Sets the text color of error messages to red */
+    font-size: 0.8em; /* Adjusts the font size of error messages */
+    position: absolute; /* Enables absolute positioning for error messages */
+    bottom: -20px; /* Positions error messages below input fields */
+    left: 50%; /* Centers error messages horizontally between inputs */
+    transform: translateX(-50%); /* Centers error messages horizontally */
+}
+
+/* Styling for input fields with errors */
+.error-input {
+    border-color: red; /* Changes the border color of input fields with errors to red */
+}
+
+/* Styling for buttons */
+.buttons {
+    display: flex; /* Makes buttons flex items */
+    justify-content: flex-end; /* Right-aligns buttons within their container */
+    margin-top: 20px; /* Adds space between buttons and other content */
+}
+
+.buttons button {
+    padding: 8px 16px; /* Adjusts the padding of buttons for a smaller size */
+    border: 3px solid #000; /* Adds a border to buttons */
+    border-radius: 4px; /* Rounds the corners of buttons */
+    background-color: #fff; /* Sets the background color of buttons to white */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-weight: bold; /* Makes button text bold */
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle box shadow to buttons */
+    margin-left: 10px; /* Adds spacing between buttons */
+}
+
+.buttons button:hover {
+    background-color: #f8f8f8; /* Changes the background color on button hover */
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* Adds a different box shadow on hover */
+}
+
+/* Styling for tables */
+table {
+    width: 100%; /* Makes tables take up the full width of their container */
+    border-collapse: collapse; /* Collapses table borders for a cleaner look */
+    margin-top: 20px; /* Adds space above tables */
+    border: 3px solid #000; /* Adds a border to tables */
+}
+
+/* Styling for the first row of table headers in the name column */
+th:first-child {
+    background-color: #e0e0e0; /* Sets a slightly darker background color for the first row of table headers in the name column */
+}
+
+/* Styling for the first row of table headers in the location column */
+th:first-child + th {
+    background-color: #e0e0e0; /* Sets a slightly darker background color for the first row of table headers in the location column */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Adds borders to table cells */
+    padding: 10px; /* Adds padding to table cells */
+    text-align: left; /* Aligns text to the left within table cells */
+}
+
+/* Styling for the first column of table headers and table data cells */
+th:first-child, td:first-child {
+    border-left: 3px solid #000; /* Adds a left border to the first column */
+}
+
+/* Styling for table headers */
+th {
+    background-color: #f0f0f0; /* Sets a background color for table headers */
+    padding: 5px; /* Adds padding to table headers */
+}
+
+/* Styling for table data cells */
+td {
+    padding: 20px; /* Adds more padding to table data cells */
+}
+
+/* Styling for alternating row colors */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Sets an alternating background color for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Sets an alternating background color for even rows */
+}
+
+/* Responsive styling for mobile devices (screens with a maximum width of 600px) */
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column; /* Stacks input and label elements vertically on mobile */
+        align-items: flex-start; /* Aligns elements to the start (left) on mobile */
+        margin-bottom: 30px; /* Reduces space between input groups on mobile */
+    }
+
+    .input-group label {
+        margin-bottom: 5px; /* Adds space between labels on mobile */
+    }
+
+    .buttons {
+        flex-direction: column; /* Stacks buttons vertically on mobile */
+        align-items: stretch; /* Stretches buttons to full width on mobile */
+    }
+
+    .buttons button {
+        width: 100%; /* Makes buttons take up full width on mobile */
+        margin-top: 10px; /* Adds space between buttons on mobile */
+    }
+
+    .buttons button:first-child {
+        margin-top: 0; /* Removes top margin from the first button on mobile */
+    }
+}
