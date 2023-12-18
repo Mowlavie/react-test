@@ -120,4 +120,4 @@ const FormComponent = () => {
   );
 };
 
-export default FormComponent; // Export the FormComponent for use in other parts of your application.
+export default FormComponent; // Export the FormComponent for use in other parts of the form application.
